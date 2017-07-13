@@ -192,3 +192,46 @@ body {
 .text-muted {
     margin-top: 15px;
 }
+
+@media (max-width: 767px) {
+    .brand {
+        padding-left: 0px;
+        padding-right: 0px;
+        border-radius: 0px 0px 0px 0px;
+        border: 1px solid #EFEFEF;
+        background-color: #F5F5F5;
+        margin: 0 auto;
+        width: 100vw;
+    }
+    .brand h1 {
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 5px;
+        color: #333;
+        font-family: 'Overlock SC', serif;
+        font-size: 18px;
+    }
+    .logo {
+        height: 75px;
+        border: 1px solid #EFEFEF;
+        padding: 7px;
+        display: block;
+        margin: auto;
+        background-color: #FFF;
+        box-shadow: 2px 2px 2px #888888;
+    }
+    .navbar {
+        margin-top: 45px;
+        padding-top: 100px;
+    }
+    .nav li {
+        padding-left: 0vw;
+        padding-right: 0vw;
+    }
+    .navbar-left {
+        padding-left: 0px;
+    }
+    .navbar-right {
+        padding-right: 0px;
+    }
+}
