@@ -166,6 +166,23 @@ body {
     padding-right: 10vw;
 }
 
+body h3,
+table,
+tr,
+td,
+th,
+p {
+    text-align: center;
+}
+
+table {
+    margin: 0px auto;
+}
+
+th {
+    padding-right: 5px;
+}
+
 
 /* Sticky footer styles
 -------------------------------------------------- */
@@ -193,6 +210,114 @@ body {
     margin-top: 15px;
 }
 
+@media (max-width: 1370px) {
+    .brand {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px 0px 100px 100px;
+        border: 1px solid #EFEFEF;
+        background-color: #F5F5F5;
+        margin: 0 auto;
+        width: 300px;
+    }
+    .brand h1 {
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 5px;
+        color: #333;
+        font-family: 'Overlock SC', serif;
+        font-size: 28px;
+    }
+    .logo {
+        height: 100px;
+        border: 1px solid #EFEFEF;
+        padding: 7px;
+        display: block;
+        margin: auto;
+        background-color: #FFF;
+        box-shadow: 3px 3px 3px #888888;
+    }
+    .navbar {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .brand {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px 0px 100px 100px;
+        border: 1px solid #EFEFEF;
+        background-color: #F5F5F5;
+        margin: 0 auto;
+        width: 260px;
+    }
+    .brand h1 {
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 5px;
+        color: #333;
+        font-family: 'Overlock SC', serif;
+        font-size: 20px;
+    }
+    .logo {
+        height: 85px;
+        border: 1px solid #EFEFEF;
+        padding: 7px;
+        display: block;
+        margin: auto;
+        background-color: #FFF;
+        box-shadow: 3px 3px 3px #888888;
+    }
+    .navbar {
+        margin-top: 50px;
+    }
+    .navbar-left {
+        padding-left: 5vw;
+    }
+    .navbar-right {
+        padding-right: 5vw;
+    }
+}
+
+@media (max-width: 925px) {
+    .brand {
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 0px 0px 100px 100px;
+        border: 1px solid #EFEFEF;
+        background-color: #F5F5F5;
+        margin: 0 auto;
+        width: 260px;
+    }
+    .brand h1 {
+        text-align: center;
+        letter-spacing: 4px;
+        margin-top: 5px;
+        color: #333;
+        font-family: 'Overlock SC', serif;
+        font-size: 20px;
+    }
+    .logo {
+        height: 85px;
+        border: 1px solid #EFEFEF;
+        padding: 7px;
+        display: block;
+        margin: auto;
+        background-color: #FFF;
+        box-shadow: 3px 3px 3px #888888;
+    }
+    .navbar {
+        margin-top: 50px;
+    }
+    .navbar-left {
+        padding-left: 10px;
+    }
+    .navbar-right {
+        padding-right: 10px;
+    }
+}
+
 @media (max-width: 767px) {
     .brand {
         padding-left: 0px;
@@ -214,7 +339,7 @@ body {
     .logo {
         height: 75px;
         border: 1px solid #EFEFEF;
-        padding: 7px;
+        padding: 4px;
         display: block;
         margin: auto;
         background-color: #FFF;

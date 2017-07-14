@@ -78,10 +78,48 @@
         </div>
         <!--/.container-fluid -->
     </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Hours</h3>
+                <p id="openStatus"></p>
+                <table>
+                    <tr>
+                        <th>Sunday</th>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>Monday</th>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>Tuesday</th>
+                        <td>Closed</td>
+                    </tr>
+                    <tr>
+                        <th>Wednesday</th>
+                        <td>9:30 AM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Thursday</th>
+                        <td>9:30 AM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Friday</th>
+                        <td>9:30 AM - 9:00 PM</td>
+                    </tr>
+                    <tr>
+                        <th>Saturday</th>
+                        <td>9:30 AM - 9:00 PM</td>
+                    </tr>
+                </table>
+                <p id="time">
+                </p>
+            </div>
+            <div class="col-md-6"></div>
 
-
-
-
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -101,6 +139,33 @@
         $('#stonesLogo').arctext({
             radius: 500
         })
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data.min.js"></script>
+    <script>
+        var ETcurrentTime = moment().tz("America/New_York").format();
+        var ETdayOfWeek = moment(ETcurrentTime).format('dddd');
+        var ETtime = moment(ETcurrentTime).format('kk:mm:ss');
+        var timeBetween = moment(ETtime).isBetween('09:30:00', '21:00:00');
+        if (ETdayOfWeek == "Sunday" || "Monday" || "Tuesday") {
+            var open = false;
+        } else {
+            if (timeBetween == true) {
+                var open = true;
+            } else {
+                var open = false;
+            }
+        }
+
+        if (open == true) {
+            document.getElementById("openStatus").innerHTML = "We are currently open!";
+
+        }
+        if (open == false) {
+            document.getElementById("openStatus").innerHTML = "We are currently closed.";
+
+        }
 
     </script>
 </body>
