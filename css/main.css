@@ -202,12 +202,53 @@ body {
     bottom: 0;
     width: 100%;
     /* Set the fixed height of the footer here */
-    height: 60px;
+    height: 120px;
     background-color: #f5f5f5;
 }
 
 .text-muted {
     margin-top: 15px;
+}
+
+.post-nav-left,
+.post-nav-right {
+    background-color: #e86f6f;
+    min-height: 140px;
+    color: whitesmoke;
+}
+
+.post-nav-left {
+    background: url(/img/fried-chicken.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.post-nav-right {
+    background: url(/img/front-room.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.post-nav-left h3,
+.post-nav-right h3 {
+    line-height: 140px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+}
+
+.col-md-6 {
+    overflow: hidden;
+    text-align: center;
+}
+
+span .fa {
+    display: inline-block;
+}
+
+.hours h3 {
+    margin-top: 5px;
 }
 
 @media (max-width: 1370px) {
@@ -246,11 +287,11 @@ body {
     .brand {
         padding-left: 20px;
         padding-right: 20px;
-        border-radius: 0px 0px 100px 100px;
+        border-radius: 0px 0px 60px 60px;
         border: 1px solid #EFEFEF;
         background-color: #F5F5F5;
         margin: 0 auto;
-        width: 260px;
+        width: 230px;
     }
     .brand h1 {
         text-align: center;
@@ -284,11 +325,11 @@ body {
     .brand {
         padding-left: 20px;
         padding-right: 20px;
-        border-radius: 0px 0px 100px 100px;
+        border-radius: 0px 0px 50px 50px;
         border: 1px solid #EFEFEF;
         background-color: #F5F5F5;
         margin: 0 auto;
-        width: 260px;
+        width: 230px;
     }
     .brand h1 {
         text-align: center;

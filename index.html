@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Overlock|Overlock+SC" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.3/outdatedbrowser.min.css" />
     <link rel="icon" href="/img/stones-favicon.png">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -80,7 +81,16 @@
     </nav>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6 post-nav-left">
+                <h3>Famous for Fried Chicken</h3>
+            </div>
+            <div class="col-md-6 post-nav-right">
+                <h3>Famous for Cozy</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 hours">
+                <span class="fa fa-clock-o fa-4x" aria-hidden="true"></span>
                 <h3>Hours</h3>
                 <p id="openStatus"></p>
                 <table>
@@ -123,10 +133,21 @@
 
     <footer class="footer">
         <div class="container">
+            <!-- <div class="footer-review">
+                <div id="TA_cdsratingsonlynarrow848" class="TA_cdsratingsonlynarrow">
+                    <ul id="Uhwm5ah" class="TA_links GiSMlcKtb">
+                        <li id="Nijmy6zpi2" class="2PEgPAY">
+                            <a target="_blank" href="https://www.tripadvisor.com/"><img src="https://www.tripadvisor.com/img/cdsi/img2/branding/tripadvisor_logo_transp_340x80-18034-2.png" alt="TripAdvisor" /></a>
+                        </li>
+                    </ul>
+                </div>
+                <script src="https://www.jscache.com/wejs?wtype=cdsratingsonlynarrow&amp;uniq=848&amp;locationId=1838886&amp;lang=en_US&amp;border=true&amp;shadow=false&amp;backgroundColor=gray&amp;display_version=2"></script>
 
+            </div> -->
 
-
-            <p class="text-muted pull-left">&copy; {{.Now "2006"}} Stone's Family Restaurant - Millhousen, Indiana &#124; Developed and Hosted by <a href="https://webdesign.flexstart.me">Kenny Stier</a> &#124; <a href="http://www.iubenda.com/privacy-policy/8060938" target="_blank">Privacy Policy</a> &#124; Contribute to the site on <a href="https://github.com/19kestier/stonesfamilyrestaurant.com/">GitHub</a></p>
+            <div class="footer-text">
+                <p class="text-muted pull-left">&copy; {{.Now "2006"}} Stone's Family Restaurant - Millhousen, Indiana &#124; Developed and Hosted by <a href="https://webdesign.flexstart.me">Kenny Stier</a> &#124; <a href="http://www.iubenda.com/privacy-policy/8060938" target="_blank">Privacy Policy</a> &#124; Contribute to the site on <a href="https://github.com/19kestier/stonesfamilyrestaurant.com/">GitHub</a></p>
+            </div>
 
 
 
@@ -144,28 +165,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.13/moment-timezone-with-data.min.js"></script>
     <script>
-        var ETcurrentTime = moment().tz("America/New_York").format();
-        var ETdayOfWeek = moment(ETcurrentTime).format('dddd');
-        var ETtime = moment(ETcurrentTime).format('kk:mm:ss');
-        var timeBetween = moment(ETtime).isBetween('09:30:00', '21:00:00');
-        if (ETdayOfWeek == "Sunday" || "Monday" || "Tuesday") {
-            var open = false;
-        } else {
-            if (timeBetween == true) {
-                var open = true;
-            } else {
-                var open = false;
-            }
-        }
 
-        if (open == true) {
-            document.getElementById("openStatus").innerHTML = "We are currently open!";
-
-        }
-        if (open == false) {
-            document.getElementById("openStatus").innerHTML = "We are currently closed.";
-
-        }
 
     </script>
 </body>
