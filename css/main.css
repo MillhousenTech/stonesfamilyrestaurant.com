@@ -1,5 +1,6 @@
 body {
     font-family: 'Overlock', sans-serif;
+    text-align: center;
 }
 
 .brand {
@@ -13,7 +14,6 @@ body {
 }
 
 .brand h1 {
-    text-align: center;
     letter-spacing: 4px;
     margin-top: 5px;
     color: #333;
@@ -62,9 +62,12 @@ body {
     z-index: 1;
 }
 
+
+/* https://work.smarchal.com/twbscolor/3.3.6/scss/ad4444853a3ad9d9d9d9d9d91 */
+
 .navbar-default {
     background-color: #ad4444;
-    border-color: #ad4444;
+    border-color: #853a3a;
     border-top: 1px dashed pink;
     border-bottom: 1px dashed pink;
 }
@@ -92,27 +95,52 @@ body {
     color: #d9d9d9;
 }
 
+.navbar-default .navbar-nav>li>.dropdown-menu {
+    background-color: #ad4444;
+}
+
+.navbar-default .navbar-nav>li>.dropdown-menu>li>a {
+    color: #d9d9d9;
+}
+
+.navbar-default .navbar-nav>li>.dropdown-menu>li>a:hover,
+.navbar-default .navbar-nav>li>.dropdown-menu>li>a:focus {
+    color: #d9d9d9;
+    background-color: #853a3a;
+}
+
+.navbar-default .navbar-nav>li>.dropdown-menu>li.divider {
+    background-color: #853a3a;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a,
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
+    color: #d9d9d9;
+    background-color: #853a3a;
+}
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #d9d9d9;
-    background-color: #ad4444;
+    background-color: #853a3a;
 }
 
 .navbar-default .navbar-nav>.open>a,
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #d9d9d9;
-    background-color: #ad4444;
+    background-color: #853a3a;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: #ad4444;
+    border-color: #853a3a;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: #ad4444;
+    background-color: #853a3a;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -144,7 +172,7 @@ body {
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus {
         color: #d9d9d9;
-        background-color: #ad4444;
+        background-color: #853a3a;
     }
 }
 
@@ -171,9 +199,7 @@ table,
 tr,
 td,
 th,
-p {
-    text-align: center;
-}
+p {}
 
 table {
     margin: 0px auto;
@@ -213,7 +239,7 @@ body {
 .post-nav-left,
 .post-nav-right {
     background-color: #e86f6f;
-    min-height: 110px;
+    min-height: 90px;
     color: whitesmoke;
     padding-left: 0px;
     padding-right: 0px;
@@ -229,42 +255,66 @@ body {
     background-size: cover;
 }
 
-.post-nav-left h3,
-.post-nav-right h3 {
-    line-height: 110px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
-
 .navbar {
     margin-bottom: 0px;
 }
 
 .col-md-6 {
     overflow: hidden;
-    text-align: center;
 }
 
 span .fa {
     display: inline-block;
 }
 
-.hours h3,
-.call h3 {
+.info h3 {
     margin-top: 5px;
 }
 
 .famous {
     background-color: rgba(0, 0, 0, 0.4);
+    font-size: 32px;
+    line-height: 250px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.material-icons.info {
+    font-size: 48px;
+}
+
+.info {
+    padding-top: 10px;
+}
+
+.family-style {
+    height: 100%;
+    color: white;
+}
+
+.buffet {
+    height: 100%;
+    color: white;
+}
+
+.individual {
+    height: 100%;
+    color: white;
 }
 
 .red-stripe {
     background-color: #ad4444;
-    text-align: center;
     color: #f2f2f2;
     width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.red-stripe p {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 28px;
+    margin-bottom: 0px;
 }
 
 .row {
@@ -273,9 +323,34 @@ span .fa {
     margin-right: 0px;
 }
 
+.row.info-stripe2 {
+    background-color: #ad4444;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-bottom: 10px;
+}
+
 .google-maps {
     width: 100%;
     height: 500px;
+}
+
+.overlay {
+    background: transparent;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    /* your iframe height */
+    top: 500px;
+    /* your iframe height */
+    margin-top: -500px;
+    /* your iframe height */
+}
+
+@media (hover: none) {
+    .overlay {
+        display: none;
+    }
 }
 
 .col-md-6.map {
@@ -284,11 +359,13 @@ span .fa {
 }
 
 .map-text {
-    font-size: 36px;
+    font-size: 32px;
     display: table-cell;
     vertical-align: middle;
     color: white;
     background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .map-text-container {
@@ -298,6 +375,48 @@ span .fa {
     background-size: cover;
     padding-left: 0px;
     padding-right: 0px;
+}
+
+.map {
+    height: 500px;
+}
+
+.fried-chicken-text {
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.fried-chicken {
+    height: 500px;
+    display: table;
+    background: url(/img/fried-chicken.jpg) no-repeat center;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.fried-chicken-text table tbody tr td,
+.fried-chicken-text table tbody tr th {
+    font-size: 14px;
+}
+
+.other-food {
+    height: 500px;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: #853a3a;
+}
+
+.other-food-text {
+    background-color: #853a3a;
+    width: 100%;
+    color: white;
+    font-size: 32px;
 }
 
 @media (max-width: 1370px) {
@@ -311,7 +430,6 @@ span .fa {
         width: 300px;
     }
     .brand h1 {
-        text-align: center;
         letter-spacing: 4px;
         margin-top: 5px;
         color: #333;
@@ -343,7 +461,6 @@ span .fa {
         width: 230px;
     }
     .brand h1 {
-        text-align: center;
         letter-spacing: 4px;
         margin-top: 5px;
         color: #333;
@@ -381,7 +498,6 @@ span .fa {
         width: 230px;
     }
     .brand h1 {
-        text-align: center;
         letter-spacing: 4px;
         margin-top: 5px;
         color: #333;
@@ -410,10 +526,6 @@ span .fa {
     .post-nav-right {
         min-height: 140px;
     }
-    .post-nav-left h3,
-    .post-nav-right h3 {
-        line-height: 140px;
-    }
 }
 
 @media (max-width: 767px) {
@@ -427,7 +539,6 @@ span .fa {
         width: 100vw;
     }
     .brand h1 {
-        text-align: center;
         letter-spacing: 4px;
         margin-top: 5px;
         color: #333;
