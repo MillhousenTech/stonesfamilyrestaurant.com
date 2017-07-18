@@ -262,11 +262,42 @@ span .fa {
     background-color: #ad4444;
     text-align: center;
     color: #f2f2f2;
-    width: 100vw;
-    margin-left: -15px;
-    margin-right: -15px;
+    width: 100%;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.row {
+    width: 100%;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.google-maps {
+    width: 100%;
+    height: 500px;
+}
+
+.col-md-6.map {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.map-text {
+    font-size: 36px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.map-text-container {
+    height: 500px;
+    display: table;
+    background: url(/img/table-of-two.jpeg) no-repeat center;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
 @media (max-width: 1370px) {
