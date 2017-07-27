@@ -662,6 +662,10 @@ span {
     transition: all 0.5s linear;
 }
 
+.modal-footer {
+    text-align: center;
+}
+
 @media (max-width: 1370px) {
     .brand {
         padding-left: 20px;
