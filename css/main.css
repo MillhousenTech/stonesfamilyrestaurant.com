@@ -236,25 +236,6 @@ body {
     margin-top: 15px;
 }
 
-.post-nav-left,
-.post-nav-right {
-    background-color: #e86f6f;
-    min-height: 90px;
-    color: whitesmoke;
-    padding-left: 0px;
-    padding-right: 0px;
-}
-
-.post-nav-left {
-    background: url(/img/fried-chicken.jpg) no-repeat center;
-    background-size: cover;
-}
-
-.post-nav-right {
-    background: url(/img/front-room.jpg) no-repeat center;
-    background-size: cover;
-}
-
 .navbar {
     margin-bottom: 0px;
 }
@@ -269,14 +250,6 @@ span .fa {
 
 .info h3 {
     margin-top: 5px;
-}
-
-.famous {
-    background-color: rgba(0, 0, 0, 0.4);
-    font-size: 32px;
-    line-height: 250px;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
 
 .material-icons.info {
@@ -389,6 +362,7 @@ span .fa {
     background-color: rgba(0, 0, 0, 0.4);
     padding-left: 15px;
     padding-right: 15px;
+    width: 100%;
 }
 
 .fried-chicken {
@@ -406,7 +380,7 @@ span .fa {
 }
 
 .other-food {
-    height: 500px;
+    min-height: 500px;
     padding-left: 0px;
     padding-right: 0px;
     background-color: #853a3a;
@@ -417,6 +391,7 @@ span .fa {
     width: 100%;
     color: white;
     font-size: 32px;
+    margin-bottom: 5px;
 }
 
 .btn-default {
@@ -483,6 +458,7 @@ span .fa {
 }
 
 .review-item {
+    max-width: 600px;
     border: solid 1px rgba(190, 190, 190, .35);
     margin: 0 auto;
     padding: 1em;
@@ -551,6 +527,10 @@ span .fa {
     content: "\2605";
 }
 
+.review-sep {
+    display: none;
+}
+
 .google-reviews {
     background-color: white;
     margin-top: 30px;
@@ -563,8 +543,8 @@ span .fa {
 .TA_selfserveprop {
     display: block;
     margin: 0 auto;
-    width: 470px;
-    height: 383px;
+    width: 240px;
+    height: 370px;
 }
 
 .yelp-review {
@@ -576,6 +556,110 @@ span .fa {
 
 .sub-p {
     font-size: 18px;
+}
+
+.reviews {
+    height: 500px;
+}
+
+.famous {
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 32px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.post-nav-left,
+.post-nav-right {
+    background-color: #e86f6f;
+    min-height: 90px;
+    color: whitesmoke;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 250px;
+    display: table;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.post-nav-left {
+    background: url(/img/fried-chicken.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.post-nav-right {
+    background: url(/img/front-room.jpg) no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 992px) {
+    .col-md-6 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-6 {
+        width: 50%;
+    }
+}
+
+span {
+    display: table;
+    margin: 0 auto;
+}
+
+.other-dishes-photos {
+    max-width: 450px;
+    max-height: 450px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.darken {
+    display: inline-block;
+    background: black;
+    padding: 0;
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.darken img {
+    display: block;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
+}
+
+.darken:hover img {
+    opacity: 0.3;
+}
+
+.darken span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    color: rgba(255, 255, 255, 0);
+}
+
+.darken:hover span {
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -ms-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 }
 
 @media (max-width: 1370px) {
