@@ -1,0 +1,10 @@
+/* TEAM */
+	Creator and Maintainer: Kenny Stier
+	Contact: kenny.stier [at] flexstart.me
+	Twitter: @kestier19
+	From: Millhousen, Indiana, USA
+
+/* SITE */
+	Language: English
+	Doctype: HTML5
+	IDE: Brackets, GitKraken, Ubuntu, Gnome

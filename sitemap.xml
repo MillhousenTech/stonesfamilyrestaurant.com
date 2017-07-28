@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>https://stonesfamilyrestaurant.com/</loc>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/awf-basket.jpg</image:loc>
+        <image:title>Stone's Alaskan White Fish Basket</image:title>
+        <image:caption>Alaskan White Fish Sandwich with French Fries and Slaw</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/building.jpg</image:loc>
+        <image:title>Stone's Family Restaurant</image:title>
+        <image:caption>Taken from the southwest end of the building</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/czb-dlx.jpg</image:loc>
+        <image:title>Stone's Cheeseburger Deluxe</image:title>
+        <image:caption>Juicy burger topped with mayo, lettuce, tomato, onion, and pickle.</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/fried-chicken.jpg</image:loc>
+        <image:title>Stone's Fried Chicken</image:title>
+        <image:caption>Stone's Famous Fried Chicken</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/front-room.jpg</image:loc>
+        <image:title>Front Room of Stone's Family Restaurant</image:title>
+        <image:caption>The front room of the restaurant, right next to the buffet</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/google.svg</image:loc>
+        <image:title>Google Logo</image:title>
+        <image:caption>By Google Inc. [Public domain], via Wikimedia Commons</image:caption>
+        <image:license>https://creativecommons.org/publicdomain/zero/1.0/</image:license>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/stones-favicon.png</image:loc>
+        <image:title>Stone's Family Restaurant Favicon</image:title>
+        <image:caption>Favicon of Stone's Family Restaurant, by Kenny Stier</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+    </image:image>
+    <image:image>
+        <image:loc>https://stonesfamilyrestaurant.com/img/table-of-two.jpg</image:loc>
+        <image:title>Table of Two</image:title>
+        <image:caption>Located in the front room of Stone's Family Restaurant next to the window</image:caption>
+        <image:license>https://creativecommons.org/licenses/by-nc-sa/4.0/</image:license>
+	<image:geo_location>Millhousen, Indiana</image:geo_location>
+    </image:image>
+  <priority>1.00</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://stonesfamilyrestaurant.com/menu/daily.pdf</loc>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://stonesfamilyrestaurant.com/menu/wednesday.pdf</loc>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://stonesfamilyrestaurant.com/menu/thursday.pdf</loc>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>https://stonesfamilyrestaurant.com/menu/weekend.pdf</loc>
+  <priority>0.60</priority>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
