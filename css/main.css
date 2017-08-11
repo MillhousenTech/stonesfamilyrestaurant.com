@@ -375,6 +375,52 @@ span .fa {
     padding-right: 0px;
 }
 
+.homemade-pie-text {
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.homemade-pie {
+    height: 500px;
+    display: table;
+    background: url(/img/sugar-cream-pie.jpg) no-repeat center;
+    background-size: cover;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.dine-take-text {
+    font-size: 32px;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.dine-take {
+    height: 500px;
+    display: table;
+    background-color: #853a3a;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.row.stripe .col-md-6.dine-take {
+    background-color: #963f3f;
+}
+
+.row.stripe .col-md-6.facebook-embed {
+    background-color: #b35050;
+}
+
 .fried-chicken-text table tbody tr td,
 .fried-chicken-text table tbody tr th {
     font-size: 14px;

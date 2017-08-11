@@ -40,6 +40,18 @@
 </head>
 
 <body>
+    <div id="fb-root"></div>
+    <script>
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+
+    </script>
     <nav class="navbar navbar-default navbar-static-top">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -125,6 +137,25 @@
             <p><a href="tel:18125912435">(812) 591-2435</a></p>
         </div>
 
+    </div>
+    <div class="row stripe">
+
+        <div class="col-md-6 dine-take">
+            <div class="dine-take-text">
+                <h3>Dine In or Take Out</h3>
+                <p class="sub-p">Come on in or give us a call, we'd be happy to serve you!</p>
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#largeModal">
+                            View Menu
+                        </a>
+            </div>
+
+
+        </div>
+        <div class="col-md-6 facebook-embed">
+            <div class="fb-page" data-href="https://www.facebook.com/Stones-Family-Restaurant-789901247763189/" data-tabs="timeline" data-width="1000" data-height="500" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/Stones-Family-Restaurant-789901247763189/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Stones-Family-Restaurant-789901247763189/">Stones Family Restaurant</a></blockquote>
+            </div>
+        </div>
     </div>
     <div class="stripe red-stripe">
         <p>Located in the quaint, little town of Millhousen, Indiana</p>
@@ -275,8 +306,8 @@
                         </a>
             </div>
         </div>
-        <div class="col-md-6 fried-chicken">
-            <div class="fried-chicken-text">
+        <div class="col-md-6 homemade-pie">
+            <div class="homemade-pie-text">
                 <p>Don't leave without trying our homemade pie for dessert!</p>
                 <p class="sub-p">Come while it lasts; the later you come in the week, the more likely you are to miss out!</p>
             </div>
@@ -293,7 +324,7 @@
                     <h3 class="modal-title" id="menuModalLabel">View Menu</h3>
                 </div>
                 <div class="modal-body">
-                    <h4>When Do You Plan On Dining With Us?</h4>
+                    <h4>When Do You Plan On Ordering?</h4>
                     <a href="/menu/daily.pdf" class="btn btn-default">
                             During the Day
                         </a>
