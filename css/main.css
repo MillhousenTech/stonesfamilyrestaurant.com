@@ -665,7 +665,7 @@ span {
 }
 
 .other-dishes-photos {
-    max-width: 450px;
+width:100%;
     max-height: 450px;
     text-align: center;
     margin: 0 auto;
@@ -676,8 +676,8 @@ span {
     background: black;
     padding: 0;
     position: relative;
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 .darken img {
