@@ -294,6 +294,11 @@ span .fa {
     width: 100%;
     margin-left: 0px;
     margin-right: 0px;
+    max-height: 500px;
+}
+
+div.col-md-6.facebook-embed {
+    height: 500px;
 }
 
 .row.info-stripe2 {
@@ -665,7 +670,7 @@ span {
 }
 
 .other-dishes-photos {
-width:100%;
+    width: 100%;
     max-height: 450px;
     text-align: center;
     margin: 0 auto;
