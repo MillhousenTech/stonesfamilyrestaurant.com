@@ -1,6 +1,6 @@
 /* TEAM */
 	Creator and Maintainer: Kenny Stier
-	Contact: kenny.stier [at] flexstart.me
+	Contact: kenny [at] flexstart.me
 	Twitter: @kestier19
 	From: Millhousen, Indiana, USA
 
