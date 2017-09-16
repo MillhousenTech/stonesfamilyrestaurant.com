@@ -150,7 +150,7 @@
 
         </div>
         <div class="col-md-6 facebook-embed">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"  id="facebook"></iframe>
         </div>
     </div>
     <div class="stripe red-stripe">
@@ -364,7 +364,7 @@
 
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/stevenmonson/googleReviews/6e8f0d79/google-places.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCiovr6kDFRJMQBZJA8BJIUokGjQNOJpuA&signed_in=true&libraries=places"></script>
 
@@ -397,6 +397,16 @@
             }
         });
 
+        
+        var viewWidth = $(window).width();
+
+function setIframeWidth(){
+	document.getElementById('facebook').src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=" + viewWidth + "&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId";
+}
+
+if (viewWidth < 500) {
+setIframeWidth();
+}
     </script>
     <!--
     <script>
