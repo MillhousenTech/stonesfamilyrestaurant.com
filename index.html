@@ -99,27 +99,26 @@
             <h2 class="famous">Famous for Country Hospitality</h2>
         </div>
     </div>
-           <!-- <div class="stripe red-stripe" id="snow">
-        <p>Our 1st Annual Stone's Hometown Christmas Wonderland is November 25th, featuring Santa, Christmas Carolers, Country Crafts, and more!</p>
-                			<a href="/christmas-wonderland/" class="button">Learn More</a>
+    <div class="stripe red-stripe" style="display:none;" id="snow">
+        <p>Our 2nd Annual Stone's Hometown Christmas Wonderland is December 1<sup>st</sup>, featuring Santa, Christmas Carolers, Country Crafts, and more!</p>
+        <!-- 	<a href="/christmas-wonderland/" class="button">Learn More</a> -->
 
-        </div> -->
-<div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
+    </div>
+    <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
         <p>🇺🇸 We will be closed July 4<sup>th</sup> to enjoy the holiday with family and friends. See you on the 5<sup>th</sup> for taco bar! 🇺🇸</p>
-	<p>Thanks! - Donna and Joe</p>
-        </div>
-<script>
-var ts = Math.round((new Date()).getTime() / 1000);
-anomaly = document.getElementById('hours-anomaly');
-if (ts <= 1530756000) {
+        <p>Thanks! - Donna and Joe</p>
+    </div>
+    <script>
+        var ts = Math.round((new Date()).getTime() / 1000);
+        anomaly = document.getElementById('snow');
+        if (ts <= 1543683599) {
 
-      anomaly.style.display = "block";
-}
-   else
-   {
-      anomaly.style.display = "none";
-   }
-</script>
+            anomaly.style.display = "block";
+        } else {
+            anomaly.style.display = "none";
+        }
+
+    </script>
     <div class="stripe red-stripe">
         <p>Located in the quaint, little town of Millhousen, Indiana</p>
         <p>Serving Your Family Since 1934</p>
@@ -174,7 +173,7 @@ if (ts <= 1530756000) {
 
         </div>
         <div class="col-md-6 facebook-embed">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"  id="facebook"></iframe>
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=500&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="500" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" id="facebook"></iframe>
         </div>
     </div>
     <div class="stripe red-stripe">
@@ -316,35 +315,32 @@ if (ts <= 1530756000) {
                     <h3 class="modal-title" id="menuModalLabel">View Menu</h3>
                 </div>
                 <div class="modal-body">
-<a href="javascript:showMenu('evening')" class="btn btn-default">Evening</a>
-<a href="javascript:showMenu('lunch')" class="btn btn-default">Lunch</a>
+                    <a href="javascript:showMenu('evening')" class="btn btn-default">Evening</a>
+                    <a href="javascript:showMenu('lunch')" class="btn btn-default">Lunch</a>
 
-                 <object id="evening" data="/menu/stones-menu-evening.pdf" type="application/pdf" width="100%" height="800">
+                    <object id="evening" data="/menu/stones-menu-evening.pdf" type="application/pdf" width="100%" height="800">
                 <p>This browser does not support PDFs. Please <a href="/menu/stones-menu-evening.pdf">download the PDF of the Evening menu</a> to view it.</p>
             </object>
 
-<object id="lunch" data="/menu/stones-menu-day.pdf" type="application/pdf" width="100%" height="800" style="display:none;">
+                    <object id="lunch" data="/menu/stones-menu-day.pdf" type="application/pdf" width="100%" height="800" style="display:none;">
                 <p>This browser does not support PDFs. Please <a href="/menu/stones-menu-day.pdf">download the PDF of the Lunch menu</a> to view it.</p>
             </object>
 
-<script type="text/javascript">
-function showMenu(menuType)
-{
-   d1 = document.getElementById('evening');
-   d2 = document.getElementById('lunch');
+                    <script type="text/javascript">
+                        function showMenu(menuType) {
+                            d1 = document.getElementById('evening');
+                            d2 = document.getElementById('lunch');
 
-   if( menuType == "evening" )
-   {
-      d1.style.display = "block";
-      d2.style.display = "none";
-   }
-   else
-   {
-      d1.style.display = "none";
-      d2.style.display = "block";
-   }
-}
-</script>
+                            if (menuType == "evening") {
+                                d1.style.display = "block";
+                                d2.style.display = "none";
+                            } else {
+                                d1.style.display = "none";
+                                d2.style.display = "block";
+                            }
+                        }
+
+                    </script>
                 </div>
             </div>
         </div>
@@ -433,16 +429,16 @@ function showMenu(menuType)
             }
         });
 
-        
+
         var viewWidth = $(window).width();
 
-function setIframeWidth(){
-	document.getElementById('facebook').src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=" + viewWidth + "&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId";
-}
+        function setIframeWidth() {
+            document.getElementById('facebook').src = "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FStones-Family-Restaurant-789901247763189%2F&tabs=timeline&width=" + viewWidth + "&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId";
+        }
 
-if (viewWidth < 500) {
-setIframeWidth();
-}
+        if (viewWidth < 500) {
+            setIframeWidth();
+        }
 
         (function(i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r;
