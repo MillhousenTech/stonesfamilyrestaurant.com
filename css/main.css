@@ -858,7 +858,7 @@ span {
 
 #snow{
       background-color: #2f7336; /* fallback for old browsers */
-	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), url('http://www.wearewebstars.dk/codepen/img//s2.png'), url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	background-image: url('/img/s1.png'), url('/img/s2.png'), url('/img/s3.png');
 	height: 100%;
 	width: 100%;
 	z-index:1;
