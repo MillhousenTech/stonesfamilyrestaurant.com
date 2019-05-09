@@ -105,13 +105,13 @@
 
     </div>
     <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
-        <p>🇺🇸 We will be closed July 4<sup>th</sup> to enjoy the holiday with family and friends. See you on the 5<sup>th</sup> for taco bar! 🇺🇸</p>
+        <p>🇺🇸 We will be closed July 3<sup>rd</sup> and 4<sup>th</sup> to enjoy the holiday with family and friends. See you on the 5<sup>th</sup> at 5 PM! 🇺🇸</p>
         <p>Thanks! - Donna and Joe</p>
     </div>
     <script>
         var ts = Math.round((new Date()).getTime() / 1000);
-        anomaly = document.getElementById('snow');
-        if (ts <= 1543716000) {
+        anomaly = document.getElementById('hours-anomaly');
+        if (ts <= 1562360400) {
 
             anomaly.style.display = "block";
         } else {
