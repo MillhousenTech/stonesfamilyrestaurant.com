@@ -99,18 +99,24 @@
       <h2 class="famous">Famous for Country Hospitality</h2>
     </div>
   </div>
-  <div class="stripe red-stripe" style="display:none;" id="snow">
-    <p>Our 3rd Annual Stone's Hometown Christmas Wonderland is December 7<sup>th</sup>, featuring Santa, Dustin Huff, Country Crafts, and more!</p>
-    <a href="/christmas-wonderland/" class="button">Learn More</a>
-
-  </div>
+    <div class="stripe red-stripe" id="snow">
+        <!--<p>Our 2nd Annual Stone's Hometown Christmas Wonderland is December 1<sup>st</sup>, featuring Santa, Christmas Carolers, Country Crafts, and more!</p>
+        <a href="/christmas-wonderland/" class="button">Learn More</a>-->
+        <p>Holiday Schedule</p>
+        <ul>
+            <li>Christmas Eve - Closed</li>
+            <li>Christmas Day - Closed</li>
+            <li>New Year's Eve - Closed</li>
+            <li>New Year's Day - Open</li>
+        </ul>
+    </div>
   <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
     <p>We will be opening Friday, August 9<sup>th</sup> at 12 PM for the preparation day of the <a href="https://millhousenchurch.com/events/auction/">Immaculate Conception Auction</a>, with the buffet opening at 5 PM as usual.</p>
   </div>
   <script>
     var ts = Math.round((new Date()).getTime() / 1000);
     anomaly = document.getElementById('snow');
-    if (ts <= 1575781200) {
+    if (ts <= 1577923200) {
 
       anomaly.style.display = "block";
     } else {
