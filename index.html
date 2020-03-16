@@ -99,7 +99,7 @@
       <h2 class="famous">Famous for Country Hospitality</h2>
     </div>
   </div>
-    <div class="stripe red-stripe" id="snow">
+    <div style="display:none;" class="stripe red-stripe" id="snow">
         <!--<p>Our 2nd Annual Stone's Hometown Christmas Wonderland is December 1<sup>st</sup>, featuring Santa, Christmas Carolers, Country Crafts, and more!</p>
         <a href="/christmas-wonderland/" class="button">Learn More</a>-->
         <p>Holiday Schedule</p>
@@ -110,19 +110,19 @@
             <li>New Year's Day - Open</li>
         </ul>
     </div>
-  <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
-    <p>We will be opening Friday, August 9<sup>th</sup> at 12 PM for the preparation day of the <a href="https://millhousenchurch.com/events/auction/">Immaculate Conception Auction</a>, with the buffet opening at 5 PM as usual.</p>
-  </div>
-  <script>
-    var ts = Math.round((new Date()).getTime() / 1000);
-    anomaly = document.getElementById('snow');
-    if (ts <= 1577923200) {
-
-      anomaly.style.display = "block";
-    } else {
-      anomaly.style.display = "none";
-    }
-  </script>
+    <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
+      <p>Due to the current COVID-19 situation, we will only be open for carry-out.</p>
+    </div>
+    <script>
+      var ts = Math.round((new Date()).getTime() / 1000);
+      anomaly = document.getElementById('hours-anomaly');
+      if (ts <= 1585713600) {
+  
+        anomaly.style.display = "block";
+      } else {
+        anomaly.style.display = "none";
+      }
+    </script>
   <div class="stripe red-stripe">
     <p>Located in the quaint, little town of Millhousen, Indiana</p>
     <p>Serving Your Family Since 1934</p>
