@@ -107,12 +107,12 @@
         <p>Call ahead for reservations!</p>
     </div>
     <div style="display:none;" class="stripe red-stripe" id="hours-anomaly">
-      <p>Due to the current COVID-19 situation, we will only be open for carry-out.</p>
+      <p>We will be closed May 12th - May 15th, taking some much needed family time. We will reopen on May 19th at 5 pm.</p>
     </div>
     <script>
       var ts = Math.round((new Date()).getTime() / 1000);
-      anomaly = document.getElementById('snow');
-      if (ts <= 1609664400) {
+      anomaly = document.getElementById('hours-anomaly');
+      if (ts <= 1621418400) {
   
         anomaly.style.display = "block";
       } else {
